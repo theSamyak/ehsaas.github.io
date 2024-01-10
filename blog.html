@@ -35,6 +35,11 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
@@ -85,9 +90,21 @@
 
             <article class="entry entry-single">
 
-              <div class="entry-img">
-                <img src="assets/img/blog/blog-1.png" alt="" class="img-fluid">
+
+              <div class="entry-img swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- Add multiple slides here -->
+                  <div class="swiper-slide"><img src="assets/img/blog/blog-1.jpeg" alt="" class="img-fluid"></div>
+                  <div class="swiper-slide"><img src="assets/img/blog/blog-2.jpeg" alt="" class="img-fluid"></div>
+                  <div class="swiper-slide"><img src="assets/img/blog/blog-3.jpeg" alt="" class="img-fluid"></div>
+                  <div class="swiper-slide"><img src="assets/img/blog/blog-4.jpeg" alt="" class="img-fluid"></div>
+
+                  <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
               </div>
+              
 
               <h2 class="entry-title">
                 <a href="blog.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
@@ -214,6 +231,19 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000, // Set the delay in milliseconds (e.g., 5000 for 5 seconds)
+      },
+    });
+  </script>
+  
+  
 
 </body>
 

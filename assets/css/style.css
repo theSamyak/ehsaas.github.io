@@ -2415,3 +2415,19 @@ section {
   font-size: 13px;
   color: #012970;
 }
+
+
+.swiper-pagination {
+  margin-top: -50px; /* Adjust the margin as needed to separate pagination from the title */
+}
+
+
+/* Custom CSS to adjust Swiper pagination position */
+.swiper-pagination {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 10px; /* Adjust the margin as needed to separate pagination from the title */
+}
